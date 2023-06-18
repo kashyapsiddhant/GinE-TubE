@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".Activities.AccountActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Account_tllbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Account"
+        tools:ignore="PrivateResource" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Account_tllbr"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/accn"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/white"
+            android:id="@+id/user_prof_img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/user_prof_img"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/user_chnnlname"
+            android:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/material_dynamic_secondary0"
+            android:textSize="14sp"
+            android:layout_below="@id/user_chnnlname"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/user_prof_img"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/Account_tllbr"
+        android:layout_marginTop="30dp"
+        android:id="@+id/view"/>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:theme="@style/Widget.Design.BottomNavigationView">
+
+        <TextView
+            android:background="@drawable/ripple_effect_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/yourchnnl"
+            android:drawablePadding="20dp"
+            android:drawableTint="#D11818"
+            android:padding="15dp"
+            android:text="Your Channel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/channel"/>
+
+        <TextView
+            android:id="@+id/settings"
+            android:background="@drawable/ripple_effect_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/setting"
+            android:drawablePadding="20dp"
+            android:drawableTint="#D11818"
+            android:padding="15dp"
+            android:text="Settings"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/helpdesk"
+            android:background="@drawable/ripple_effect_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/helpdesk"
+            android:drawablePadding="20dp"
+            android:drawableTint="#D11818"
+            android:padding="15dp"
+            android:text="Helpdesk  "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

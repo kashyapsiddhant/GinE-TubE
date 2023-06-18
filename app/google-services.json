@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "971051186125",
+    "project_id": "gine-tube-cd17d",
+    "storage_bucket": "gine-tube-cd17d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971051186125:android:c705107f6d0936810ef684",
+        "android_client_info": {
+          "package_name": "com.example.gine_tube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971051186125-mvhsecvf2etqfjui85sec5g5knl5bs3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBprC6zGeeEpv9Aai_pT3lag5V_7naRqFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971051186125-mvhsecvf2etqfjui85sec5g5knl5bs3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

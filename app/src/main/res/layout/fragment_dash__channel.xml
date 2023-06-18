@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard.Dash_Channel"
+    android:fitsSystemWindows="false"
+    android:id="@+id/personal_chnnl">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/channel_appbar"
+        android:fitsSystemWindows="false">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#99FF0000"
+            app:contentScrim="?colorControlHighlight"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channel Name"
+                android:textSize="19dp"
+                android:fontFamily="@font/dela_gothic_one"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:id="@+id/channel_UserName"/>
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tllbar_chnnlName"
+                app:menu="@menu/toolbar_menu"
+                android:theme="@style/Dash"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99FF0000"
+            android:minHeight="60dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorColor="@color/design_default_color_on_primary"
+            app:tabIndicatorHeight="1dp"
+            app:tabGravity="center"
+            app:tabMode="scrollable"
+            app:tabIndicatorFullWidth="false"
+            app:tabTextColor="@color/teal_200"
+            app:tabSelectedTextColor="#FFF">
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Playlist"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscription"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:id="@+id/Channel_ViewPager"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Channel_Descp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dela_gothic_one"
+            android:text="Use Geni_Tube Channel....."
+            android:textColor="#BC8371"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/text_edit_bgrnd"
+            android:hint="Enter Channel Name"
+            android:inputType="text"
+            android:id="@+id/Channel_Name"
+            android:textColor="#212121"
+            android:maxLines="4"
+            android:imeOptions="actionNext"
+            android:fontFamily="sans-serif-condensed-light"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/text_edit_bgrnd"
+            android:hint="Enter Channel Description"
+            android:inputType="textMultiLine"
+            android:id="@+id/Channel_Name_Descp"
+            android:textColor="#212121"
+            android:maxLines="7"
+            android:fontFamily="sans-serif-condensed-light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By making your channel you adhere to the rules and regulations of
+Geni-TUbe and grant your property to Siddhant Kashyap."
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/dela_gothic_one"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_channel"
+            android:text="Create Channel"
+            android:textAllCaps="true"
+            android:textColor="#982222"
+            android:fontFamily="@font/dela_gothic_one"
+            android:gravity="end"
+            android:includeFontPadding="false"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
