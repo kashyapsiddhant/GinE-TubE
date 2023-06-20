@@ -15,6 +15,9 @@
         android:theme="@style/Theme.GinETubE"
         tools:targetApi="33">
         <activity
+            android:name=".Activities.PublishVideoActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.AccountActivity"
             android:exported="false" />
         <activity

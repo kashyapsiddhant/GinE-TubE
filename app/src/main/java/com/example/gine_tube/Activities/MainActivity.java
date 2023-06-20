@@ -2,6 +2,7 @@ package com.example.gine_tube.Activities;
 
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -136,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                         selectedFragment(new ExploreFragment());
                         break;
                     case R.id.pblsh:
-                        Toast.makeText(MainActivity.this,"Add A Video", Toast.LENGTH_SHORT).show();
+                        showpublishDialogue();
                         break;
                     case R.id.sbscptn:
                         selectedFragment(new SubscriptionFragment());
@@ -154,7 +155,30 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-        //Add user in firebase
+
+    private void showpublishDialogue() {
+        Dialog dialog=new Dialog(MainActivity.this);
+        dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.publish_video_dialog);
+        dialog.setCanceledOnTouchOutside(true);
+        TextView text_publish_video=dialog.findViewById(R.id.txt_upload_video);
+        TextView text_make_post=dialog.findViewById(R.id.txt_make_poll);
+        TextView text_create_post=dialog.findViewById(R.id.txt_create_post);
+        TextView text_go_live=dialog.findViewById(R.id.txt_go_live);
+        TextView text_short_video=dialog.findViewById(R.id.txt_short_video);
+        text_publish_video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, PublishVideoActivity.class);
+                intent.putExtra("type","VIDEO");
+                startActivity(intent);
+            }
+        });
+
+        dialog.show();
+    }
+
+    //Add user in firebase
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

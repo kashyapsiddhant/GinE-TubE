@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".fragments.HomeFragment"
+    android:background="@drawable/dash_colour">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -11,6 +12,7 @@
         android:layout_height="match_parent"
         android:text="Home Fragment"
         android:gravity="center"
-        android:textSize="50dp"/>
+        android:textSize="50dp"
+        android:textColor="@color/white"/>
 
 </FrameLayout>

@@ -5,14 +5,16 @@
         android:title="Notification"
         android:id="@+id/notify"
         android:icon="@drawable/notifi"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
     <item
         android:title="Search"
         android:id="@+id/srch"
         android:icon="@drawable/srch"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
 

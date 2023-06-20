@@ -3,17 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ExploreFragment"
-    tools:ignore="MissingDefaultResource"
+    tools:context=".Dashboard.VideoDashFragment"
     android:background="@drawable/dash_colour">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Explore Fragment"
+        android:text="VIDEO DASHBOARD"
         android:gravity="center"
-        android:textSize="50dp"
-        android:textColor="@color/white"/>
+        android:textSize="40sp"
+        android:textColor="@color/white" />
 
 </FrameLayout>

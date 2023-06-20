@@ -5,35 +5,40 @@
         android:title="Home"
         android:id="@+id/home"
         android:icon="@drawable/home"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
     <item
         android:title="explore"
         android:id="@+id/explr"
         android:icon="@drawable/explr"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
     <item
         android:title="Publish"
         android:id="@+id/pblsh"
         android:icon="@drawable/pblsh"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
     <item
         android:title="Subscription"
         android:id="@+id/sbscptn"
         android:icon="@drawable/sbscrb"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
     <item
         android:title="Library"
         android:id="@+id/lbry"
         android:icon="@drawable/lbry"
-        app:showAsAction="ifRoom">
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white">
 
     </item>
 

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SubscriptionFragment">
+    tools:context=".fragments.SubscriptionFragment"
+    android:background="@drawable/dash_colour">
 
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,6 +13,7 @@
         android:layout_height="match_parent"
         android:text="Subscription Fragment"
         android:gravity="center"
-        android:textSize="50dp"/>
+        android:textSize="50dp"
+        android:textColor="@color/white"/>
 
 </FrameLayout>

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@drawable/dash_colour"
     tools:context=".Activities.AccountActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/Account_tllbr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_200"
+        android:background="@drawable/dash_colour"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,8 @@
             android:src="@drawable/accn"
             app:civ_border_width="0.5dp"
             app:civ_border_color="@color/white"
-            android:id="@+id/user_prof_img"/>
+            android:id="@+id/user_prof_img"
+            android:backgroundTint="@color/white"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +39,7 @@
             android:textSize="20sp"
             android:layout_toEndOf="@id/user_prof_img"
             android:layout_marginStart="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:id="@+id/user_chnnlname"
             android:fontFamily="sans-serif"/>
         <TextView
@@ -46,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textColor="@color/material_dynamic_secondary0"
+            android:textColor="@color/white"
             android:textSize="14sp"
             android:layout_below="@id/user_chnnlname"
             android:layout_marginStart="10dp"
@@ -72,44 +73,44 @@
         android:theme="@style/Widget.Design.BottomNavigationView">
 
         <TextView
-            android:background="@drawable/ripple_effect_account"
+            android:background="@drawable/dash_colour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/yourchnnl"
             android:drawablePadding="20dp"
-            android:drawableTint="#D11818"
+            android:drawableTint="@color/white"
             android:padding="15dp"
             android:text="Your Channel"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:id="@+id/channel"/>
 
         <TextView
             android:id="@+id/settings"
-            android:background="@drawable/ripple_effect_account"
+            android:background="@drawable/dash_colour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:drawableStart="@drawable/setting"
             android:drawablePadding="20dp"
-            android:drawableTint="#D11818"
+            android:drawableTint="#FFFFFF"
             android:padding="15dp"
             android:text="Settings"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/helpdesk"
-            android:background="@drawable/ripple_effect_account"
+            android:background="@drawable/dash_colour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:drawableStart="@drawable/helpdesk"
             android:drawablePadding="20dp"
-            android:drawableTint="#D11818"
+            android:drawableTint="#FFFFFF"
             android:padding="15dp"
             android:text="Helpdesk  "
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp" />
 
     </LinearLayout>

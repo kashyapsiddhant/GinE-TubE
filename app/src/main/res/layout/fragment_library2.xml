@@ -6,7 +6,8 @@
     tools:context=".fragments.LibraryFragment"
     android:fillViewport="true"
     android:fitsSystemWindows="true"
-    android:scrollbars="none">
+    android:scrollbars="none"
+    android:background="@drawable/dash_colour">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="Recent"
                 android:textSize="16sp"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:padding="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"/>
@@ -32,8 +33,7 @@
                 android:padding="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
-                android:id="@+id/header_recylview"
-                android:background="@android:color/white"/>
+                android:id="@+id/header_recylview" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="History"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:padding="5dp"
                 android:drawablePadding="20dp"
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your Videos"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:padding="5dp"
                 android:drawablePadding="20dp"
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Downloads"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:padding="5dp"
                 android:drawablePadding="20dp"
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Watch Later"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:padding="5dp"
                 android:drawablePadding="20dp"
@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Liked Videos"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:padding="5dp"
                 android:drawablePadding="20dp"
@@ -120,7 +120,7 @@
                 android:id="@+id/plyst"
                 android:text="Playlist"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:padding="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"/>

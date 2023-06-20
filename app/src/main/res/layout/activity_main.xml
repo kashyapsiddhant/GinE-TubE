@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#00BCD4"
+    android:background="@drawable/dash_colour"
     android:layout_height="match_parent"
     tools:context=".Activities.MainActivity"
     android:id="@+id/major">
@@ -17,7 +17,7 @@
             android:id="@+id/tllbr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00BCD4"
+            android:background="@drawable/dash_colour"
             app:menu="@menu/toolbar_menu"
             tools:ignore="PrivateResource">
 
@@ -39,7 +39,8 @@
                     android:layout_height="24dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/accn" />
+                    android:src="@drawable/accn"
+                    app:civ_circle_background_color="@color/white"/>
             </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
@@ -55,9 +56,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00BCD4"
-        app:itemTextColor="@android:color/black"
-        app:itemIconTint="@android:color/black"
+        android:background="@drawable/dash_colour"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"
         app:menu="@menu/bottom_menu"
         app:itemRippleColor="@color/cardview_dark_background"
         android:id="@+id/bttn_nvgtn"

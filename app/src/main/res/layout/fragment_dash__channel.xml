@@ -37,11 +37,12 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
         <com.google.android.material.tabs.TabLayout
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#99FF0000"
             android:minHeight="60dp"
+
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:tabIndicatorColor="@color/design_default_color_on_primary"
             app:tabIndicatorHeight="1dp"
